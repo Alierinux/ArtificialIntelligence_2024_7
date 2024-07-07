@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>948</width>
+    <height>554</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>180</y>
+     <width>441</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="monitor">
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>实时检测</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="classify">
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>障碍物分类</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="warning">
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>风险预警</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="record">
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>沿途记录</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="exit">
+      <property name="font">
+       <font>
+        <family>Adobe Arabic</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>退出</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>60</y>
+     <width>151</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Adobe Arabic</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>功能菜单</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../source/source.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>record</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>record()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>413</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>369</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>warning</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>warning()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>313</x>
+     <y>353</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>126</x>
+     <y>296</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>classify</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>classify()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>312</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>130</x>
+     <y>222</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>monitor</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>monitor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>233</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>183</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exit</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>308</x>
+     <y>473</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>112</x>
+     <y>410</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>goto_function_page()</slot>
+  <slot>monitor()</slot>
+  <slot>classify()</slot>
+  <slot>warning()</slot>
+  <slot>record()</slot>
+  <slot>exit()</slot>
+ </slots>
+</ui>
