@@ -1,0 +1,16 @@
+<RCC>
+  <qresource>
+    <file>home_page.png</file>
+    <file>人体检测.jpg</file>
+    <file>动物识别.jpg</file>
+    <file>图像主体识别.jpg</file>
+    <file>网络文字.jpg</file>
+    <file>表格文字.jpg</file>
+    <file>身份证.jpg</file>
+    <file>车型识别.jpg</file>
+    <file>车牌.jpg</file>
+    <file>车牌识别.jpg</file>
+    <file>车辆检测.jpg</file>
+    <file>通用物体和场景识别.jpg</file>
+  </qresource>
+</RCC>
