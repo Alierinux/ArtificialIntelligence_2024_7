@@ -157,3 +157,6 @@ cython_debug/
 /DataBase
 /CourseNote
 /__pycache__
+!/Source/.qrc
+!/Source/source_rc.py
+!/Source/home_page.png
